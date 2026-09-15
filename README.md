@@ -9,6 +9,8 @@ Das **Full Lecture Template** ist ein Quarto-basiertes Template zur Erstellung u
 * Aufgabenblätter und Lösungen,
 * Begleitdokumente und Cheatsheets.
 
+Es ist primär für Naturwissenschaftliche Lehrveranstaltungen gedacht, die insbesondere mit Python arbeiten.
+
 ## Dokumentation
 
 Eine ausführliche Dokumentation zur Einrichtung, Struktur und Verwendung des Templates finden Sie hier:
