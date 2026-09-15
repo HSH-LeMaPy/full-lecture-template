@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 12
+exercise-number: 12
+other-links:
+  - text: Aufgabenblatt 12
+    href: 12A.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 12
+    href: 12A.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: false
+---
+
+{{< include ../Aufgabenblaetter/12A_content.qmd >}}

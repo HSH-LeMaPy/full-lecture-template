@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 8
+exercise-number: 8
+other-links:
+  - text: Aufgabenblatt 8 Lösung
+    href: 8A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 8 Lösung
+    href: 8A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/8A_content.qmd >}}

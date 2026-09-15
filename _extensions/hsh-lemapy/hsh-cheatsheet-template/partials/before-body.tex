@@ -1,0 +1,40 @@
+% Show author information and logo in header
+\pagestyle{fancy}
+\fancyhead[L]{\footnotesize{$for(author)$$author$$sep$ \and $endfor$ \\
+$for(affiliations/first)$$it.name$ \\ $it.department$$sep$ \and $endfor$
+}}
+\fancyhead[R]{\includegraphics[width=0.5cm]{$logo-path$}}
+
+% Show page number in footer
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+% % Configure section numbering
+% \makeatletter
+% \renewcommand\sectionlinesformat[4]{
+%   \Ifstr{#1}{section}
+%     {\@hangfrom{\hskip #2}{#4#3}}
+%     {\@hangfrom{\hskip #2}{#4 #3}}
+% }
+% \makeatother
+% \renewcommand\sectionformat{\enskip\thesection\autodot}
+
+% \setcounter{section}{$exercise-number$}
+
+% Configure the title
+% \pretitle{ % make title large and bold
+%   \Large\textbf
+% }
+% \posttitle{}
+\preauthor{} % hide author on first page as it is shown in header
+\postauthor{}
+\predate{} % hide date
+\postdate{}
+
+\setlength{\headheight}{20pt}
+\setlength{\headsep}{10mm}
+\setlength{\footskip}{10mm}
+
+%\setlength{\headsep}{0.5cm}
+\setlength{\droptitle}{-0.5in}
+%\maketitle

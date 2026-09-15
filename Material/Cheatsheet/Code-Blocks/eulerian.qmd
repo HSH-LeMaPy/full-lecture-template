@@ -1,0 +1,6 @@
+````python
+import networkx as nx
+G = nx.Graph([(0, 1), (1, 2), (2, 0)])
+nx.draw(G,pos=nx.circular_layout(G),  with_labels=True)
+nx.is_eulerian(G)
+````

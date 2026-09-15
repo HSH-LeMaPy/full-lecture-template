@@ -1,0 +1,9 @@
+# Hiermit wird das Cheatsheet als pdf gerendert.
+
+project:
+  output-dir: _output
+  render:
+    - Material/Cheatsheet/Cheatsheet.qmd
+
+format: hsh-cheatsheet-template-pdf
+title: Cheatsheet

@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 18
+exercise-number: 18
+other-links:
+  - text: Aufgabenblatt 18 Lösung
+    href: 18A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 18 Lösung
+    href: 18A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/18A_content.qmd >}}

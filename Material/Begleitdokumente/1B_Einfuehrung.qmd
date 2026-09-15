@@ -1,0 +1,28 @@
+---
+title: Begleitdokument 1
+other-links:
+  - text: Begleitdokument 1
+    href: 1B_Einfuehrung.pdf
+    icon: file-pdf
+code-links:
+  - text: Begleitnotebook 1
+    href: 1B_Einfuehrung.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+---
+
+## Inhalte
+
+1. [Testalgorithmus](#testalgorithmus)
+
+
+### Testalgorithmus
+
+Hier ein Algorithmus der zur Vorlesung passt.
+
+:::{.cell .code}
+```{.python}
+{{< include "../Code/Beispielcode/Groesste_Zahl_bestimmen.py" >}}
+```
+:::

@@ -1,0 +1,194 @@
+# Hiermit wird die website selbst, sowie alle auf ihr liegenden html Dateien gerendert.
+
+project:
+  type: website
+  output-dir: _output
+  # Explizite Render-Liste: es wird nur gerendert, was auf der Website
+  # auch verlinkt/angezeigt wird
+  render:
+    # --- Startseite ---
+    - Material/Uebersicht/index.qmd
+    # --- Übersicht ---
+    - Material/Uebersicht/uebersicht.qmd
+    # --- Kapitel ---
+    - Material/Inhalte/1I_Einfuehrung.qmd
+    # --- Begleitdokumente und Cheatsheet ---
+    - Material/Cheatsheet/Cheatsheet.qmd
+    - Material/Begleitdokumente/1B_Einfuehrung.qmd
+    # --- Übungen + Lösungen ---
+    - Material/Uebungen/Aufgabenblaetter_Strukturen/1A.qmd
+    - Material/Uebungen/Aufgabenblaetter_Strukturen/1A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/2A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/2A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/3A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/3A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/4A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/4A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/5A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/5A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/6A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/6A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/7A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/7A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/8A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/8A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/9A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/9A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/10A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/10A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/11A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/11A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/12A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/12A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/13A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/13A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/14A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/14A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/15A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/15A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/16A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/16A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/17A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/17A_sol.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/18A.qmd
+    #- Material/Uebungen/Aufgabenblaetter_Strukturen/18A_sol.qmd
+
+website:
+  favicon: Ressourcen/favicon-32x32.png
+  page-navigation: true
+  reader-mode: true
+  search: false
+  navbar:
+    left:
+      - text: Übersicht
+        file: Material/Uebersicht/uebersicht.qmd
+      - sidebar:inhalte
+      - sidebar:begleitdokumente
+      - sidebar:uebungen
+      - sidebar:loesungen
+  sidebar:
+    - title: Übersicht
+      style: docked
+      background: light
+      contents:
+        - Material/Uebersicht/uebersicht.qmd
+    - id: inhalte
+      title: Inhalte
+      logo: Ressourcen/favicon-32x32.png
+      style: docked
+      background: light
+      contents:
+        - Material/Inhalte/1I_Einfuehrung.qmd
+    - id: begleitdokumente
+      title: Begleitdokumente
+      style: docked
+      background: light
+      contents:
+         - href: Material/Cheatsheet/Cheatsheet.qmd
+           text: Cheatsheet
+         - href: Material/Begleitdokumente/1B_Einfuehrung.qmd
+           text: Begleitdokument 1
+    - id: uebungen
+      title: Übungen
+      style: docked
+      background: light
+      contents:
+         - href: Material/Uebungen/Aufgabenblaetter_Strukturen/1A.qmd
+           text: Aufgabenblatt 1
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/2A.qmd
+         #  text: Aufgabenblatt 2
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/3A.qmd
+         #  text: Aufgabenblatt 3
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/4A.qmd
+         #  text: Aufgabenblatt 4
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/5A.qmd
+         #  text: Aufgabenblatt 5
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/6A.qmd
+         #  text: Aufgabenblatt 6
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/7A.qmd
+         #  text: Aufgabenblatt 7
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/8A.qmd
+         #  text: Aufgabenblatt 8
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/9A.qmd
+         #  text: Aufgabenblatt 9
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/10A.qmd
+         #  text: Aufgabenblatt 10
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/11A.qmd
+         #  text: Aufgabenblatt 11
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/12A.qmd
+         #  text: Aufgabenblatt 12
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/13A.qmd
+         #  text: Aufgabenblatt 13
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/14A.qmd
+         #  text: Aufgabenblatt 14
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/15A.qmd
+         #  text: Aufgabenblatt 15
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/16A.qmd
+         #  text: Aufgabenblatt 16
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/17A.qmd
+         #  text: Aufgabenblatt 17
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/18A.qmd
+         #  text: Aufgabenblatt 18
+    - id: loesungen
+      title: Lösungen
+      style: docked
+      background: light
+      contents:
+         - href: Material/Uebungen/Aufgabenblaetter_Strukturen/1A_sol.qmd
+           text: Lösung 1
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/2A_sol.qmd
+         #  text: Lösung 2
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/3A_sol.qmd
+         #  text: Lösung 3
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/4A_sol.qmd
+         #  text: Lösung 4
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/5A_sol.qmd
+         #  text: Lösung 5
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/6A_sol.qmd
+         #  text: Lösung 6
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/7A_sol.qmd
+         #  text: Lösung 7
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/8A_sol.qmd
+         #  text: Lösung 8
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/9A_sol.qmd
+         #  text: Lösung 9
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/10A_sol.qmd
+         #  text: Lösung 10
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/11A_sol.qmd
+         #  text: Lösung 11
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/12A_sol.qmd
+         #  text: Lösung 12
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/13A_sol.qmd
+         #  text: Lösung 13
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/14A_sol.qmd
+         #  text: Lösung 14
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/15A_sol.qmd
+         #  text: Lösung 15
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/16A_sol.qmd
+         #  text: Lösung 16
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/17A_sol.qmd
+         #  text: Lösung 17
+         #- href: Material/Uebungen/Aufgabenblaetter_Strukturen/18A_sol.qmd
+         #  text: Lösung 18
+
+format:
+  html:
+    lang: de
+    theme:
+      light: flatly
+      dark: darkly
+    toc: true
+    toc-depth: 4
+    code-fold: show
+    code-tools:
+      source: false
+      toggle: true
+      caption: Code
+    html-math-method: mathml
+    embed-resources: false
+    self-contained-math: false
+    # ─── Lösungs-Freigabe nach Datum ───
+    include-after-body:
+      - solutions_release/solutions-release.html
+
+author: ""

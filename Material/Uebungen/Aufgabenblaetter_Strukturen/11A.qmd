@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 11
+exercise-number: 11
+other-links:
+  - text: Aufgabenblatt 11
+    href: 11A.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 11
+    href: 11A.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: false
+---
+
+{{< include ../Aufgabenblaetter/11A_content.qmd >}}

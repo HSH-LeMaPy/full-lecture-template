@@ -1,0 +1,11 @@
+````python
+nx.draw(G)
+nx.draw(G,with_labels=True)
+nx.draw(G,node_size=200,node_color="red")
+pos = nx.circular_layout(G) # Kreislayout
+pos = nx.spring_layout(G) # Linienlayout
+pos = {1:(0,0),2:(0,-0.1),...}
+connectionstyle='arc3,rad=0.2'
+nx.draw(G,pos=pos)
+plt.show()
+````

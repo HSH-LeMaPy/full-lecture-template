@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 2
+exercise-number: 2
+other-links:
+  - text: Aufgabenblatt 2 Lösung
+    href: 2A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 2 Lösung
+    href: 2A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/2A_content.qmd >}}

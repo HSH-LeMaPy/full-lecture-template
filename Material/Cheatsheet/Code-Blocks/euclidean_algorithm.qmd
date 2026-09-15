@@ -1,0 +1,8 @@
+````python
+def erweiterter_Euklid(a, b):  
+    if a == 0:  
+        return b, 0, 1        
+    else:  
+        g, x, y = erweiterter_Euklid(b % a, a) 
+        return g, y - (b // a) * x, x 
+````

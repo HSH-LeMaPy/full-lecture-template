@@ -1,0 +1,17 @@
+# Die außen liegende Quarto datei. Wenn man sie rendert, wird standardmäßig das Profil skript gerendert.
+# Anstonsten werden ein paar Variablen festgelegt.
+ 
+project:
+  title: Lehrveranstaltung
+author: Prof. Dr. Max Mustermann
+logo-path: Ressourcen/logo.png
+
+# Warnungen aus Python-Zellen (z.B. NumPy-DeprecationWarnings aus Bibliotheken)
+# nicht in den Output rendern - sie verschmutzen sonst Website/PDFs. Grafiken/Ergebnisse
+# bleiben erhalten. Gilt fuer alle Profile.
+execute:
+  warning: false
+
+profile:
+  group:
+    - [skript, folien, pdfs, notebooks, aufgaben, cheatsheet]  # Wenn kein Profil angegeben ist, render skript

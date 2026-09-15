@@ -1,0 +1,4 @@
+````python
+def caesar (S,C):
+    return "".join( [chr((ord(c)-ord('A')+C)%26+ord('A')) for c in S]) 
+````

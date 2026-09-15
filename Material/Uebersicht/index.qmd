@@ -1,0 +1,14 @@
+---
+title: Herzlich Willkommen
+toc: true
+sidebar: true
+---
+
+Herzlich Willkommen zur Veranstaltung Lehrveranstaltung!
+
+Hier finden Sie alle relevanten Unterlagen!
+
+
+Autor: Max Mustermann
+Veröffentlichungsdatum: WS2024/25
+

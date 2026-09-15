@@ -1,0 +1,112 @@
+<script>
+(function () {
+  if (window.__solutionsReleaseLoaded) return;
+  window.__solutionsReleaseLoaded = true;
+
+  // ─────────────────────────────────────────────────
+  // Konfiguration: Freigabedaten der Lösungen
+  //   Schlüssel: Dateiname des gerenderten HTML
+  //              (Aufgabenblatt{N}_sol.html)
+  //   Wert:      Freigabedatum (YYYY-MM-DD).
+  //              Ab diesem Tag (00:00 Uhr lokale Zeit)
+  //              wird die Lösung sichtbar.
+  //
+  // ─────────────────────────────────────────────────
+  var releaseDates = {
+    "1A_sol.html":  "2026-01-01"
+  };
+
+  function run() {
+    var today = new Date();
+
+    function isLocked(file) {
+      var d = releaseDates[file];
+      return !!(d && today < new Date(d));
+    }
+
+    function fileFromHref(href) {
+      return (href || "").split("/").pop().split("#")[0].split("?")[0];
+    }
+
+    // -------------------------------
+    // 1. Lösungs-Links in Navigation
+    //    und Sidebar ausblenden
+    // -------------------------------
+    document.querySelectorAll('a[href*="_sol.html"]').forEach(function (link) {
+      var file = fileFromHref(link.getAttribute("href"));
+      if (isLocked(file)) {
+        var li = link.closest("li");
+        if (li) li.style.display = "none";
+        else link.style.display = "none";
+      }
+    });
+
+    // Page-Navigation (Pfeile "weiter / zurück")
+    document.querySelectorAll('a[rel~="next"], a[rel~="prev"]').forEach(function (link) {
+      var file = fileFromHref(link.getAttribute("href"));
+      if (isLocked(file)) {
+        var container = link.closest('.page-navigation') || link.parentElement;
+        if (container) container.style.display = "none";
+      }
+    });
+
+    // ---------------------------------------
+    // 2. Direktaufruf einer gesperrten Lösung
+    //    → Inhalt durch Sperr-Hinweis ersetzen
+    // ---------------------------------------
+    var currentFile = window.location.pathname.split("/").pop();
+    if (isLocked(currentFile)) {
+      var releaseDate = releaseDates[currentFile];
+      var formatted;
+      try {
+        formatted = new Date(releaseDate).toLocaleDateString("de-DE", {
+          year: "numeric", month: "long", day: "numeric"
+        });
+      } catch (e) {
+        formatted = releaseDate;
+      }
+
+      document.body.innerHTML =
+        '<div style="display:flex;align-items:center;justify-content:center;' +
+        'height:100vh;background:#111;color:white;font-family:system-ui;' +
+        'text-align:center;padding:2rem;">' +
+        '<div>' +
+        '<h1 style="margin-bottom:1rem;">🔒 Lösung noch nicht freigegeben</h1>' +
+        '<p>Diese Lösung wird verfügbar ab:</p>' +
+        '<h2>' + formatted + '</h2>' +
+        '</div></div>';
+      return;
+    }
+
+    // --------------------------------
+    // 3. Navbar- und Sidebar-Eintrag
+    //    "Lösungen" ausblenden, wenn
+    //    keine Lösung mehr sichtbar
+    // --------------------------------
+    var anyVisible = Object.keys(releaseDates).some(function (file) {
+      return !isLocked(file);
+    });
+
+    if (!anyVisible) {
+      // Navbar-Eintrag (Top-Bar)
+      document.querySelectorAll('.navbar a, header nav a').forEach(function (a) {
+        if ((a.textContent || "").trim() === "Lösungen") {
+          var item = a.closest('.nav-item') || a.closest('li');
+          if (item) item.style.display = "none";
+        }
+      });
+
+      // Sidebar mit id="loesungen" (Quarto erzeugt sidebar-Container per id)
+      var sb = document.getElementById("quarto-sidebar-loesungen")
+            || document.querySelector('nav.sidebar[data-sidebar-id="loesungen"]');
+      if (sb) sb.style.display = "none";
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", run);
+  } else {
+    run();
+  }
+})();
+</script>

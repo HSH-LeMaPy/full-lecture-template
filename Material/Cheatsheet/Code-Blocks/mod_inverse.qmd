@@ -1,0 +1,8 @@
+````python
+def mod_inverse(a, m):
+    g, x, _ = erweiterter_Euklid(a, m) 
+    if g != 1:
+        raise ValueError("Das multiplikative Inverse existiert nicht.")
+    else:
+        return x % m
+````

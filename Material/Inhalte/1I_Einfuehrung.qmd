@@ -1,0 +1,75 @@
+---
+title: "Kapitel 1: Einführung"
+other-links:
+  - text: Kapitel 1
+    href: 1I_Einfuehrung.pdf
+    icon: file-pdf
+---
+
+## Einführung
+
+### Text
+
+Hier kann verschiedenartiger Text stehen. Er kann auch **fett** oder *kursiv* sein.
+
+### Auflistung
+
+- Dieses
+- Solches
+- Jenes
+
+## Ein Bild
+
+Hier ein Bild
+
+![](../Bilder/Beispielbild_KI_Generiert.png){width=300}
+
+## Eine Markdown-Tabelle
+
+| Name  | Alter | Stadt   |
+| ----- | ----: | ------- |
+| Anna  |    28 | Berlin  |
+| Ben   |    34 | Hamburg |
+| Clara |    25 | München |
+| David |    41 | Köln    |
+
+::: {.content-visible when-profile="skript"}
+Dieser Text soll im Skript aber nicht in den Folien zu sehen sein.
+:::
+
+## Ausgeführter Python-Code
+
+```{python}
+#| echo: false
+%run "../Code/Beispielcode/Groesste_Zahl_bestimmen.py"
+
+```
+
+## Callout-Note
+
+::: {.callout-note title="Titel"}
+Ich bin eine Callout-Note
+:::
+
+## Kleinerer Text
+
+<div style="font-size: 50%">
+
+Dieser text ist nur auf der halben Größe.
+
+</div>
+
+## Verschiedene Spalten
+
+:::: {layout="[0.5, 0.5]"}
+:::{#firstcol}
+
+![](../Bilder/Beispielbild_KI_Generiert.png){width=300}
+
+:::
+:::{#secondcol}
+
+Das Bild und dieser Text sind in verschiedenen Spalten und deswegen nebeneinander.
+
+:::
+::::

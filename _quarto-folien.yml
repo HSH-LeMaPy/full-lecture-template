@@ -1,0 +1,25 @@
+# Hiermit werden die Folien gerendert
+
+project:
+  output-dir: _output/Folien
+  render:
+    - Material/Inhalte/*.qmd
+
+format:
+  revealjs: 
+    slide-number: true
+    css: Ressourcen/styles-folien.css
+    smaller: true
+    logo: Ressourcen/logo.png
+    footer: Lehrveranstaltung - Prof. Dr. Max Mustermann
+    theme: white             # z.B. simple, white, solarized, serif, night … (später anpassbar)
+    background-opacity: 0.3
+    background-size: cover
+    slide-level: 2
+#    incremental: true         # Bulletpoints nacheinander
+    scrollable: true
+    auto-stretch: false       # notwendig for scrollable
+    embed-resources: true     # eine einzige HTML-Datei (gut für Moodle)
+    code-line-numbers: true
+    code-overflow: wrap
+    # echo: false   # <- Code standardmäßig ausblenden

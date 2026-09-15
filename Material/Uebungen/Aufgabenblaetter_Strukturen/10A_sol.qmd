@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 10
+exercise-number: 10
+other-links:
+  - text: Aufgabenblatt 10 Lösung
+    href: 10A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 10 Lösung
+    href: 10A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/10A_content.qmd >}}

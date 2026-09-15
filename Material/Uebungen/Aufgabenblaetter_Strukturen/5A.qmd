@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 5
+exercise-number: 5
+other-links:
+  - text: Aufgabenblatt 5
+    href: 5A.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 5
+    href: 5A.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: false
+---
+
+{{< include ../Aufgabenblaetter/5A_content.qmd >}}

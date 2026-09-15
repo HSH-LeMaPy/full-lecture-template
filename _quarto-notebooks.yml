@@ -1,0 +1,9 @@
+# Hier werden die .ipynb Notebooks der Begleitdokumente gerendert.
+
+project:
+  output-dir: _output
+  render:
+    - Material/Begleitdokumente/*.qmd
+
+format: ipynb
+toc: true

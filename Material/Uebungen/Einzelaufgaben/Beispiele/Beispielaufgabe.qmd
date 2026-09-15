@@ -1,0 +1,7 @@
+Das hier ist eine mögliche Aufgabenstellung.
+
+::: {.content-visible when-meta="show-solutions"}
+
+Das hier ist die Lösung, die nur im Lösungsblatt angezeigt wird.
+
+:::

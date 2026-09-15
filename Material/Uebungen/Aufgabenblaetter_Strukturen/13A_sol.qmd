@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 13
+exercise-number: 13
+other-links:
+  - text: Aufgabenblatt 13 Lösung
+    href: 13A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 13 Lösung
+    href: 13A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/13A_content.qmd >}}

@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 3
+exercise-number: 3
+other-links:
+  - text: Aufgabenblatt 3 Lösung
+    href: 3A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 3 Lösung
+    href: 3A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/3A_content.qmd >}}

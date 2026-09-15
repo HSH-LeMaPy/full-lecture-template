@@ -1,0 +1,46 @@
+---
+title: Übersicht
+toc: true
+sidebar: true
+---
+
+Herzlich Willkommen zur Lehrveranstaltung!
+
+
+Autorin: Max Mustermann
+Veröffentlichungsdatum: 1. Januar 2000
+
+## Eckdaten
+
+    Studiengang: Bacherlor Bachelorname, Bachelor, BSc
+    Wintersemester 2024/25
+    Umfang: 6 ECTS, 2 Semesterwochenstunde Vorlesung, 2 Semesterwochenstunde Übungen in Gruppen
+    Die Studierenden sind aufgefordert, ihre Laptops zum Unterricht mitzubringen. 
+
+
+## Angestrebte Lernergebnisse
+
+Die Studierenden...
+
+## Inhalt
+
+- Dieses
+- Jenes
+- Solches
+
+## Anforderungen der Präsenzzeit
+
+- regelmäßige und aktive Teilnahme an den Vorlesungen und Übungen
+- Bearbeitung der Präsenzaufgaben alleine oder in Gruppen
+- Nachfragen bei Unklarheiten
+
+## Anforderungen des Selbststudiums
+- Kontinuierliche Nachbereitung der Vorlesung
+- Kontinuierliche Nachbereitung der Präsenzübungen
+- selbständiges Bearbeiten der Zusatzaufgaben
+
+## Literatur
+
+- A
+- B
+- C

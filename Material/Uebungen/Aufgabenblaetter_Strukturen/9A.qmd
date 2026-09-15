@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 9
+exercise-number: 9
+other-links:
+  - text: Aufgabenblatt 9
+    href: 9A.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 9
+    href: 9A.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: false
+---
+
+{{< include ../Aufgabenblaetter/9A_content.qmd >}}

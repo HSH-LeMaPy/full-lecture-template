@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 4
+exercise-number: 4
+other-links:
+  - text: Aufgabenblatt 4 Lösung
+    href: 4A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 4 Lösung
+    href: 4A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/4A_content.qmd >}}

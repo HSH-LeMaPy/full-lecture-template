@@ -1,0 +1,10 @@
+````python
+nx.is_eulerian(G),nx.eulerian_circuit(G)
+sorted(nx.simple_cycles(G))
+nx.is_tree(G), nx.is_isomorphic(G,G1)
+nx.tournament.hamiltonian_path(G)
+nx.minimum_spanning_tree(G,algorithm='prim')
+nx.approximation.max_clique(G)
+nx.approximation.greedy_tsp(G, source = 0)
+nx.approximation.christofides(G, tree=MST)
+````

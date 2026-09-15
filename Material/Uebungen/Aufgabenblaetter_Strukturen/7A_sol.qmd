@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 7
+exercise-number: 7
+other-links:
+  - text: Aufgabenblatt 7 Lösung
+    href: 7A_sol.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 7 Lösung
+    href: 7A_sol.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: true
+---
+
+{{< include ../Aufgabenblaetter/7A_content.qmd >}}

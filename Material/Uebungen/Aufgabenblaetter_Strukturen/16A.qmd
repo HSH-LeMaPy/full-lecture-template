@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 16
+exercise-number: 16
+other-links:
+  - text: Aufgabenblatt 16
+    href: 16A.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 16
+    href: 16A.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: false
+---
+
+{{< include ../Aufgabenblaetter/16A_content.qmd >}}

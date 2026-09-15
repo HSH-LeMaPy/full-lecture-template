@@ -1,0 +1,13 @@
+# Hiermit werden die pdfs der Begleitdokumente und der Inhalte gerendert.
+
+project:
+  output-dir: _output
+  render:
+     - Material/Inhalte/*.qmd
+     - Material/Begleitdokumente/*.qmd
+
+format:
+  hsh-exercise-template-pdf:
+    include-in-header:
+      - Ressourcen/unicode-support.tex
+logo-path: Ressourcen/logo.png

@@ -1,0 +1,17 @@
+% Provides computer modern bright font
+\usepackage{mathdesign}
+\usepackage{cmbright}
+\usepackage[T1]{fontenc}
+
+% Packages for styling the header, footer and title
+\usepackage{fancyhdr}
+\usepackage{titling}
+\usepackage{tikz}
+
+% Font-Expansion (microtype) abschalten: der Typewriter-Font fuer Code-Bloecke hat in
+% manchen TeX-Installationen keine skalierbare (Type1) Variante. Mit aktiver Expansion
+% bricht pdfTeX sonst ab: "auto expansion is only possible with scalable fonts".
+% Protrusion bleibt aktiv.
+\makeatletter
+\@ifpackageloaded{microtype}{\microtypesetup{expansion=false}}{}
+\makeatother

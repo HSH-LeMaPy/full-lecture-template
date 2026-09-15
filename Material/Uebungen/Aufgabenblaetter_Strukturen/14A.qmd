@@ -1,0 +1,18 @@
+---
+title: Aufgabenblatt 14
+exercise-number: 14
+other-links:
+  - text: Aufgabenblatt 14
+    href: 14A.pdf
+    icon: file-pdf
+code-links:
+  - text: Aufgabenblatt 14
+    href: 14A.ipynb
+    type: application/octet-stream
+    icon: file-code
+downloads: [ipynb]
+
+show-solutions: false
+---
+
+{{< include ../Aufgabenblaetter/14A_content.qmd >}}

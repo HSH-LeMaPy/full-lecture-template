@@ -1,0 +1,36 @@
+title: hsh-exercise-template
+author: luca-heitmann
+version: 1.0.1
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    common:
+      author:
+        name: Prof. Dr. Manu Musterperson
+      affiliations:
+        - id: hsh
+          name: Hochschule Hannover
+          department: Fakultät IV - Wirtschaft und Informatik
+      filters:
+        - include-code-files
+      number-sections: false
+      exercise-number: 1
+    pdf:
+      pdf-engine: pdflatex
+      include-in-header: header.tex
+      include-before: \thispagestyle{fancy}
+      template-partials:
+        - partials/title.tex
+        - partials/before-body.tex
+      documentclass: scrartcl
+      papersize: a4paper
+      classoption:
+        - oneside
+      geometry:
+        - top=2.5cm
+        - bottom=2cm
+        - left=1.5cm
+        - right=1.5cm
+        - headheight=2cm
+        - marginparsep=0cm
+        - marginparwidth=0cm
