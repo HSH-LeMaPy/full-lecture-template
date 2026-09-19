@@ -12,11 +12,6 @@ code-links:
 downloads: [ipynb]
 ---
 
-## Inhalte
-
-1. [Testalgorithmus](#testalgorithmus)
-
-
 ### Testalgorithmus
 
 Hier ein Algorithmus der zur Vorlesung passt.
