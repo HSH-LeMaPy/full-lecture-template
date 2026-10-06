@@ -41,8 +41,7 @@ Dieser Text soll im Skript aber nicht in den Folien zu sehen sein.
 
 ```{python}
 #| echo: false
-%run "../Code/Beispielcode/Groesste_Zahl_bestimmen.py"
-
+{{< include "../Code/Beispielcode/Groesste_Zahl_bestimmen.py" >}}
 ```
 
 ## Callout-Note

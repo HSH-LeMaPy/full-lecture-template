@@ -16,8 +16,6 @@ downloads: [ipynb]
 
 Hier ein Algorithmus der zur Vorlesung passt.
 
-:::{.cell .code}
 ```{.python}
 {{< include "../Code/Beispielcode/Groesste_Zahl_bestimmen.py" >}}
 ```
-:::
