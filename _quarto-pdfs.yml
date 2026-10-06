@@ -10,4 +10,3 @@ format:
   hsh-exercise-template-pdf:
     include-in-header:
       - Ressourcen/unicode-support.tex
-logo-path: Ressourcen/logo.png
