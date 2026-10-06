@@ -1,7 +1,7 @@
 {
   description = "Quarto + Python via Nix";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
 
   outputs = { self, nixpkgs }:
     let
@@ -12,25 +12,27 @@
         jupyter
         ipykernel
         numpy
-	networkx
+	    networkx
         pandas
         matplotlib
         sympy
-	# hier pip packages hinzufügen, können auf search.nixos.org gefunden werden
+        black
+	    # hier pip packages hinzufügen, können auf search.nixos.org gefunden werden
       ]);
     in {
       devShells.${system}.default = pkgs.mkShell {
         packages = [
-	  pkgs.pandoc
+	      pkgs.pandoc
           pkgs.quarto
-	  pkgs.chromium  # wichtig zum mermaid rendern!!!
+	      pkgs.chromium  # wichtig zum mermaid rendern!!!
           pythonEnv
         ];
 
         shellHook = ''
+          export QUARTO_PANDOC=${pkgs.pandoc}/bin/pandoc
           export QUARTO_PYTHON=${pythonEnv}/bin/python3
-	  export QUARTO_CHROMIUM=${pkgs.chromium}/bin/chromium
-	'';
+	      export QUARTO_CHROMIUM=${pkgs.chromium}/bin/chromium
+	    '';
       };
     };
 }
