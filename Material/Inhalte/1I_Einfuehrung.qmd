@@ -12,6 +12,14 @@ other-links:
 
 Hier kann verschiedenartiger Text stehen. Er kann auch **fett** oder *kursiv* sein.
 
+::: {.content-visible when-profile="folien"}
+---
+:::
+
+### Eigene Folie
+
+Dieser Text steht auf einer extra Folie, obwohl es sich um eine Überschrift mit drei Rauten handelt.
+
 ### Auflistung
 
 - Dieses
